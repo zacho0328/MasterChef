@@ -1,6 +1,5 @@
   * @author Zachary Offerman
-  * @version 1.0   
-**/
+  * @version 1.0
 
 STEPS:
 1. Execute "git clone https://github.com/zacho0328/MasterChef.git" to retrieve the repository.
