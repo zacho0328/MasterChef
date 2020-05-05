@@ -3,7 +3,7 @@
 
 STEPS:
 1. Execute "git clone https://github.com/zacho0328/MasterChef.git" to retrieve the repository.
-2. Once in the MasterChef directory execute ".\spoonacular.html".
+2. Once in the MasterChef directory execute ".\MasterChef.html".
 3. This will open a browser page with a search box that will take the input food item or keyword
 such as "chicken" or "chicken beef". 
 4. After typing the word out you MUST click the search box to search and not use the "Enter" key.
