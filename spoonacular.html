@@ -1,3 +1,44 @@
+<div align="center">
+<p>Master Chef<br/><br/><br/></p>
+</div>
+<div align="center">
+<pre>
+           ████████                                                          ████████    
+  ████▒▒▒▒▒▒▒▒████                                                    ██▒▒░░░░▒▒██  
+██░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒██                                                ██▒▒░░    ░░▒▒██
+██░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██                    ██████████                ██▒▒        ░░██
+██░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██      ████████  ██▒▒░░  ░░▒▒██              ██░░        ██  
+██░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██  ██▒▒░░░░▒▒████░░      ░░██              ██░░        ██  
+██░░  ░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████▒▒░░    ░░▒▒▒▒░░      ░░▒▒██            ██▒▒░░    ██    
+██░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██░░        ░░▒▒░░░░    ░░▒▒▒▒██            ██▒▒░░  ██    
+██░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒██░░                  ░░░░  ░░▒▒██            ██▒▒██      
+  ██░░    ░░░░░░▒▒▒▒▒▒▒▒░░██▒▒░░    ░░                  ░░██            ██░░██      
+    ██░░      ░░░░  ░░░░▒▒██▒▒▒▒░░░░▒▒              ░░  ░░██          ██▒▒██        
+      ████░░░░░░░░▒▒▒▒▒▒████▒▒░░░░▒▒░░░░            ▒▒░░▒▒██          ██░░██        
+          ████░░░░▒▒▒▒██▒▒  ██░░▒▒▒▒░░░░▒▒▒▒▒▒▒▒      ▒▒██          ██▒▒██          
+              ████████████▒▒  ██▒▒▒▒▒▒▒▒░░░░            ██          ██░░██          
+                        ████▒▒  ████████░░░░░░            ██  ██████▒▒██            
+                          ████▒▒  ▒▒▒▒▒▒▓▓░░░░▒▒▒▒████▒▒▒▒████▒▒▒▒▓▓▒▒██            
+                            ████████░░░░░░████░░▓▓░░░░▓▓░░░░▒▒░░░░██████            
+                              ██▒▒░░░░░░░░░░░░░░  ██░░  ██░░░░▒▒░░░░░░██            
+                              ██▒▒░░░░░░░░░░░░░░▒▒▓▓░░░░▓▓░░░░░░░░░░▒▒██            
+                              ██▒▒░░░░░░░░░░░░░░░░██░░░░██░░░░░░▒▒░░▒▒██            
+                                ██▓▓▒▒░░░░░░░░▒▒▒▒░░░░░░░░░░░░░░▒▒░░██              
+                                  ██▒▒░░░░░░░░░░░░░░░░▒▒░░░░░░░░░░██                
+                                  ██▒▒░░░░░░░░░░░░░░░░▒▒░░░░░░░░░░██                
+                                  ██▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒██                
+                                  ██▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒██                
+                                  ██▓▓▒▒░░░░░░░░░░░░░░░░░░░░░░░░██                  
+                                    ██▓▓▒▒░░░░░░░░░░░░░░░░░░░░░░██                  
+                                    ██▒▒▒▒▒▒░░░░░░░░░░░░░░░░▒▒▓▓▓▓██                
+                                  ██▒▒  ▒▒▒▒░░░░▒▒░░░░░░░░▒▒▓▓▒▒▒▒▒▒██              
+                                ██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒▓▓██            
+                                ██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▓▓████▓▓▓▓▓▓▒▒▒▒▒▒▒▒▓▓██            
+                                  ████████████████    ████████████████              
+</pre>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <input id="search"><button onclick="getrecipe(document.getElementById('search').value)">Search</button>
 <div id="output"></div>
@@ -17,16 +58,13 @@ $.ajax({
 url:"https://api.spoonacular.com/recipes/search?apiKey=bfe969a822294c36997276491d83ad08&number=3&query="+q,
 success: function(res){
 document.getElementById("output").innerHTML="<h1>"+res.results[0].title+"</h1><br/><img src='"+res.baseUri+res.results[0].image+"' padding:50px;width:62px;height:62px; /><br/>ready in "+res.results[0].readyInMinutes+" minutes"
-//document.getElementById("output").innerHTML="<h1>"+res.results[2].title+"</h1><br><img src='"+res.baseUri+res.results[2].image+"' width: '400'; /><br>ready in "+res.results[2].readyInMinutes+" minutes"
 getsource(res.results[0].id)
 document.getElementById("output").innerHTML="<h2>"+res.results[1].title+"</h2><br><img src='"+res.baseUri+res.results[1].image+"' width:42px;height:42px; /><br>ready in "+res.results[1].readyInMinutes+" minutes"
 getsource(res.results[1].id)
-//getsource(res.results[2].id)
 }
 });
 }
 </script>
-
 <html>
 <head>
 <style>
@@ -72,7 +110,7 @@ p {
 </style>
 </head>
 <body>
-
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <pre id="spoonacular-ingredients" style="display:none">
 4 boneless chicken breasts
 salt
@@ -147,22 +185,6 @@ salt
     </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="https://spoonacular.com/cdn/spoonacular-1.6.min.js"></script>
-
-<p>This is a paragraph.<br/></p>
-
-  <div class="gallery">
-    <a target="blank" href="FOID.jpg">
-        <img src="FOID.jpg">
-    </a>
-    <div class="desc">Add text</div>
-</div>
-
-<div class="gallery">
-  <a target="blank" img src='"+res.baseUri+res.results[0].image+"' padding:50px;width:62px;height:62px; >
-      <img src='"+res.baseUri+res.results[0].image+"' padding:50px;width:62px;height:62px; />
-  </a>
-  <div class="desc">Add text</div>
-</div>
 
 </body>
 </html>
